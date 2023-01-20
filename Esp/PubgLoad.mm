@@ -44,7 +44,7 @@ UILabel *myLabel = [[UILabel alloc] initWithFrame:CGRectMake (300, 20, 300, 31)]
 myLabel.textColor = [UIColor greenColor];
 myLabel.font = [UIFont fontWithName:@"papyrus" size:13.0];
 myLabel.numberOfLines = 0;
-myLabel.text = @"info-thenamk3.xyz";
+myLabel.text = @"3 taps, 3 fingers"; //on screen displayed text in place of a icon
 myLabel.textAlignment = NSTextAlignmentCenter;
 myLabel.shadowColor = [UIColor blackColor];
 myLabel.shadowOffset = CGSizeMake(1.0,1.0); 
@@ -56,8 +56,6 @@ myLabel.shadowOffset = CGSizeMake(1.0,1.0);
 }
 -(void)initTapGes
 {
-    
-
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
     tap.numberOfTapsRequired = 2;//点击次数
     tap.numberOfTouchesRequired = 3;//手指数
